@@ -7,4 +7,7 @@ public interface IHospitalService {
     Medecin saveMedecin(Medecin medecin);
     RendezVous saveRDV(RendezVous rdv);
     Consultation saveConsultation(Consultation consultation);
+    AppUser saveUser(AppUser appUser);
+    AppRole saveRole(AppRole appRole);
+    void addRoleToUser(String username, String roleName);
 }
